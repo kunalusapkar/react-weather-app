@@ -43,7 +43,6 @@ class mainContainer extends React.Component{
       .then(results=>{
         return results.json()
       }).then(data=>{
-        console.log(data)
         if(data.cod === "404" || data.cod === "400" ){
           e.preventDefault();
           alert("No city Found or Please enter the city name properly")
