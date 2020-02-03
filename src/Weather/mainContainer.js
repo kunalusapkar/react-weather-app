@@ -39,7 +39,7 @@ class mainContainer extends React.Component{
     this.setState({
     city:e.target.value
     })
-    fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&appid=64ac6f9600c1835a2bffa4a4b678d539&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.state.city}&appid=64ac6f9600c1835a2bffa4a4b678d539&units=metric`)
       .then(results=>{
         return results.json()
       }).then(data=>{
